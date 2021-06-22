@@ -1,9 +1,19 @@
 import React from "react";
-function TaskFilter() {
+import TaskDisplay from "./TaskDisplay";
+function TaskFilter({ defaultTasks }) {
+  let filter = "";
   return (
     <div>
-      TaskFilter
-      <TaskDisplay />
+      {/* Add input to filter */}
+      <div>
+        <input
+          placeholder="To Filter"
+          onChange={(e) => (filter = e.target.value)}
+        ></input>
+      </div>
+      {defaultTasks.map((task, idx) => (
+        <TaskDisplay key={idx} task={task} />
+      ))}
     </div>
   );
 }

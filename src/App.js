@@ -1,6 +1,5 @@
 import "./App.css";
-import AddTask from "./components/Task/Task";
-import SortTasks from "./components/TaskFilter";
+import Task from "./components/Task/Task";
 function App() {
   return (
     <div className="App">

@@ -1,5 +1,5 @@
 import React from "react";
-function TaskDisplay() {
-  return <div>TaskDisplay</div>;
+function TaskDisplay({ task }) {
+  return <h3>{task}</h3>;
 }
 export default TaskDisplay;
